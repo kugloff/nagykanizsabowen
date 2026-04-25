@@ -12,13 +12,13 @@
 }
 
 :root{
-    --main-bg-cover: #fff0e1;
-    --box-shadow-color: #f599a6;
-    --invert-bg: rgba(0, 0, 0, 0.05);
-    --hover-color: #ffbab3;
-    --text-color: #f599a6;
-    --hover: rgba(255, 255, 255, 0.8);
-    --hr-color: #ffbab3;
+    --main-bg-cover: #faf0e6;
+    --box-shadow-color: rgba(74, 66, 63, 0.1);
+    --invert-bg: #fff9f2;
+    --hover-color: #e9c4c6;
+    --text-color: #4a423f;
+    --hover: rgba(255, 255, 255, 0.7);
+    --hr-color: #c5b398;
 }
 
 a, h1, h2, h3, h4{
@@ -54,7 +54,7 @@ body a, body a:hover, body a:active, body a:visited{
     height: 500px;
     box-shadow: var(--box-shadow-color) 0px 2px 30px;
     position: relative;
-    color: white;
+    color: var(--invert-bg);
 }
 
 .dark{
@@ -110,7 +110,7 @@ body a, body a:hover, body a:active, body a:visited{
     margin-top: 5px;
     font-weight: 600;
     font-size: 16px;
-    color: white;
+    color: var(--invert-bg);
     text-decoration: none;
     cursor: pointer;
 }
@@ -136,7 +136,7 @@ body a, body a:hover, body a:active, body a:visited{
 .slogen hr{
     width: 60%;
     margin: 0 auto 10px auto;
-    background-color: white;
+    background-color: var(--hr-color);
     height: 4px;
 }
 
@@ -148,7 +148,7 @@ body a, body a:hover, body a:active, body a:visited{
     height: 500px;
     box-shadow: var(--box-shadow-color) 0px 2px 30px;
     position: relative;
-    color: white;
+    color: var(--invert-bg);
     display: none;
 }
 
@@ -171,14 +171,14 @@ body a, body a:hover, body a:active, body a:visited{
 
 #headerMobile i{
     float: right;
-    color: white;
+    color: var(--invert-bg);
     margin: 5px 25px 0 0;
     z-index: 200;
     font-size: 20px;
 }
 
 #headerMobile i:hover{
-    color: var(--text-color);
+    color: var(--hover-color);
     cursor: pointer;
 }
 
@@ -198,21 +198,21 @@ body a, body a:hover, body a:active, body a:visited{
     text-align: center;
     font-weight: 500;
     font-size: 16px;
-    color: white;
+    color: var(--invert-bg);
     padding: 10px;
     text-decoration: none;
     cursor: pointer;
 }
 
 #hamburgerMenu a:hover{
-    color: var(--text-color);
+    color: var(--hover-color);
 }
 
 
 /* HEADER MOBILE */
 
 
-@media screen and (max-width: 970px){
+@media screen and (max-width: 1150px){
     #header{
         display: none;
     }
@@ -271,6 +271,7 @@ body a, body a:hover, body a:active, body a:visited{
 
 #aboutMe hr{
     max-width: 800px;
+    width: 80%;
     height: 3px;
     margin: 10px auto 20px auto;
     color: var(--hr-color);
@@ -308,13 +309,14 @@ body a, body a:hover, body a:active, body a:visited{
 
 /* BOWEN */
 #bowen{
-    background: linear-gradient(0deg, var(--hover-color) 0%, var(--text-color) 100%);
+    background: linear-gradient(0deg, var(--invert-bg) 0%, var(--hover-color) 20%);
     box-shadow: var(--box-shadow-color) 2px 2px 30px;
     padding: 40px 0 40px 0;
 }
 
 #bowen hr{
-    max-width: 100%;
+    max-width: 800px;
+    width: 80%;
     border: none;
     margin: 0 auto 10px auto;
     background-color: white;
@@ -494,7 +496,7 @@ body a, body a:hover, body a:active, body a:visited{
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--text-color);
-    font-weight: 200;
+    font-weight: 400;
     margin-bottom: 10px;
     font-size: 26px;
 }
@@ -509,10 +511,11 @@ body a, body a:hover, body a:active, body a:visited{
 }
 
 #testimonials .clients{
-    background: linear-gradient(0deg, var(--text-color) 0%, var(--hover-color) 100%);
+    background-color: var(--hover-color);
+    color: var(--text-color);
     height: 350px;
     width: 500px;
-    padding: 40px 20px;
+    padding: 50px 20px;
     margin: auto;
     border-radius: 20px;
     display: flex;
@@ -606,15 +609,14 @@ body a, body a:hover, body a:active, body a:visited{
 #prices{
     width: 100%;
     padding: 50px 0;
-    background: linear-gradient(0deg, var(--hover-color) 0%, var(--text-color) 100%);
-    box-shadow: var(--box-shadow-color) 2px 2px 30px;
+    background: linear-gradient(0deg, var(--hover-color) 0%, var(--invert-bg) 100%);
 }
 
 #prices h2{
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.02em;
-    color: white;
+    color: var(--text-color);
     font-weight: 400;
     font-size: 26px;
 }
@@ -623,7 +625,7 @@ body a, body a:hover, body a:active, body a:visited{
     max-width: 900px;
     border: none;
     margin: 0 auto 6px auto;
-    background-color: white;
+    background-color: var(--hr-color);
     height: 3px;
 }
 
@@ -632,22 +634,24 @@ body a, body a:hover, body a:active, body a:visited{
     margin: 30px auto 0 auto;
     width: 900px;
     background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid var(--hr-color);
 }
 
 #services td{
     height: 30px;
     font-weight: 600;
     font-size: 18px;
+    border: 1px solid var(--hr-color);
 }
 
 #services tr:nth-child(odd){
-    background-color: rgba(198, 87, 170, 0.1);
-    color: white;
+    background-color: var(--main-bg-cover);
+    color: var(--text-color);
 }
 
 #services tr:nth-child(even){
-    background-color: var(--hover);
-    color: var(--box-shadow-color);
+    background-color: var(--invert-bg);
+    color: var(--text-color);
 }
 
 #services tr td:nth-child(odd){
@@ -699,7 +703,7 @@ body a, body a:hover, body a:active, body a:visited{
 
 /* CONTACT */
 #contact{
-    background-color: var(--invert-bg);
+    background-color: var(--hover-color);
     width: 100%;
     padding: 50px 0 50px 0;
     color: var(--text-color);
@@ -716,7 +720,7 @@ body a, body a:hover, body a:active, body a:visited{
 
 #get_in_touch{
     text-align: justify;
-    background-color: white;
+    background-color: var(--invert-bg);
     padding: 55px;
     display: inline-block;
 }
@@ -731,8 +735,8 @@ body a, body a:hover, body a:active, body a:visited{
 }
 
 #contact_card{
-    color: white;
-    background: linear-gradient(0deg, var(--text-color) 0%, var(--hover-color) 100%);
+    color: var(--text-color);
+    background: linear-gradient(90deg, var(--invert-bg) 0%, var(--hover-color) 100%);
     background-size: cover;
     width: 300px;
     padding: 20px 10px;
@@ -790,14 +794,14 @@ body a, body a:hover, body a:active, body a:visited{
         padding: 20px;
         font-size: 13px;
         font-weight: 100;
+        background: linear-gradient(180deg, var(--invert-bg) 0%, var(--hover-color) 100%);
     }
 }
 
 /* FOOTER */
 
 .footer{
-    background: linear-gradient(0deg, var(--hover-color) 0%, var(--text-color) 100%);
-    box-shadow: var(--box-shadow-color) 2px 0px 30px;
+    background: linear-gradient(0deg, var(--invert-bg) 0%, var(--hover-color) 100%);
     max-width: 100%;
     height: 50px;
     padding: 15px 0;
@@ -808,17 +812,13 @@ body a, body a:hover, body a:active, body a:visited{
     font-weight: 400;
     text-transform: uppercase;
     font-size: 16px;
-    color:white;
+    color:var(--text-color);
     text-decoration: none;
     cursor: pointer;
 }
 
-.footer a:hover{
-    color: var(--hover);
-}
-
 .footer p{
-    color: var(--hover);
+    color:var(--text-color);
     font-weight: 400;
     font-size: 16px;
 }
