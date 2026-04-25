@@ -312,6 +312,7 @@ body a, body a:hover, body a:active, body a:visited{
     background: linear-gradient(0deg, var(--invert-bg) 0%, var(--hover-color) 20%);
     box-shadow: var(--box-shadow-color) 2px 2px 30px;
     padding: 40px 0 40px 0;
+    color: var(--text-color);
 }
 
 #bowen hr{
@@ -324,7 +325,7 @@ body a, body a:hover, body a:active, body a:visited{
 }
 
 .bowenContainer{
-    color: white;
+    color: var(--text-color);
     display: flex;
     overflow: hidden;
     font-weight: 600;
@@ -355,7 +356,7 @@ body a, body a:hover, body a:active, body a:visited{
 }
   
 .bowenContainer2{
-    color: white;
+    color: var(--text-color);
     display: flex;
     overflow: hidden;
 }
@@ -424,7 +425,7 @@ body a, body a:hover, body a:active, body a:visited{
 #youtubeContainer p{
     text-transform: uppercase;
     text-align: center;
-    color: white;
+    color: var(--text-color);
 }
 
 .youtube-player{
