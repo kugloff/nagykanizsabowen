@@ -811,7 +811,6 @@ body a, body a:hover, body a:active, body a:visited{
 
 .footer a{
     font-weight: 400;
-    text-transform: uppercase;
     font-size: 16px;
     color:var(--text-color);
     text-decoration: none;
