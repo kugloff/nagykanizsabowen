@@ -737,7 +737,7 @@ body a, body a:hover, body a:active, body a:visited{
 
 #contact_card{
     color: var(--text-color);
-    background: linear-gradient(90deg, var(--invert-bg) 0%, var(--hover-color) 100%);
+    background-color: var(--invert-bg);
     background-size: cover;
     width: 300px;
     padding: 20px 10px;
@@ -795,7 +795,7 @@ body a, body a:hover, body a:active, body a:visited{
         padding: 20px;
         font-size: 13px;
         font-weight: 100;
-        background: linear-gradient(180deg, var(--invert-bg) 0%, var(--hover-color) 100%);
+        background-color: var(--invert-bg);
     }
 }
 
